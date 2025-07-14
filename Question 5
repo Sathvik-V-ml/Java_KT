@@ -1,0 +1,44 @@
+class Account{
+        private int accountNumber = 123456789;
+        private float balance=2000;
+        private String ownerName="Sathvik.V";
+
+        public int getAccNumber(){
+                return accountNumber;
+        }
+        public float getbalance(){
+                return balance;
+        }
+        public String getownerName(){
+                return ownerName;
+        }
+        public void setAccNumber(int accountNumber){
+                this.accountNumber = accountNumber;
+        }
+        public void setBalance(float Blance){
+                if(Blance>0){
+                this.balance = Blance;
+                }
+                else{
+                System.out.println("error:balance less than 0");
+                System.out.println(Blance);
+                }
+        }
+ public void setownerName(String OwnerName){
+                this.ownerName=OwnerName;
+        }
+        public static void main(String []args){
+                Account account = new Account();
+                System.out.println(account.getAccNumber());
+                System.out.println(account.getbalance());
+                System.out.println(account.getownerName());
+                System.out.println();
+                account.setAccNumber(33568765);
+                account.setBalance(1555);
+                account.setownerName("Harshith");
+                System.out.println(account.getAccNumber());
+                System.out.println(account.getbalance());
+                System.out.println(account.getownerName());
+        }
+}
+          
