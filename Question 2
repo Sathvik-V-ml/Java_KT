@@ -1,0 +1,22 @@
+enum EnumData {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+}
+
+public class Enum2 {
+
+    public static String checkDayType(EnumData day) {
+        switch(day) {
+            case SATURDAY:
+            case SUNDAY:
+                return "Weekend";
+            default:
+                return "Weekday";
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(checkDayType(EnumData.MONDAY));
+        System.out.println(checkDayType(EnumData.SATURDAY));
+        System.out.println(checkDayType(EnumData.WEDNESDAY));
+    }
+}
