@@ -1,0 +1,19 @@
+class Vehicle{
+        public void startEngine(){
+                System.out.println("Vehicle starts the engine");
+                }
+                public static void main(String []args){
+                Car car = new Car();
+                car.startEngine();
+        }
+
+}
+class Car extends Vehicle{
+        public void playMusic(){
+                System.out.println("music is been played in the car");
+        }
+        public void startEngine(){
+                super.startEngine();
+                System.out.println("car starts the engine");
+        }
+}
