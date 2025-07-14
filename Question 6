@@ -1,0 +1,30 @@
+public class Shape{
+        public void area(){
+                System.out.println("area of the shape");
+        }
+        public static void main(String []args){
+                        Shape shape = new Shape();
+                        shape.area();
+                        circle c = new circle();
+                        c.area();
+                        rectangle r = new rectangle();
+                        r.area();
+                        Shape []arr = new Shape[]{c,r,shape};
+                        for(Shape i:arr){
+                                i.area();
+                        }
+                }
+}
+class circle extends Shape{
+        public void area(){
+                int rad = 5;
+                System.out.println(rad*rad);
+        }
+}
+class rectangle extends Shape{
+        public void area(){
+                int l = 10;
+                int b= 10;
+                System.out.println(l*b);
+        }
+                     }
