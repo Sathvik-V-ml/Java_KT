@@ -1,0 +1,46 @@
+abstract class employee{
+        abstract int calculateSalary();
+        abstract void getDetails();
+public static void main(String []args){
+                manager m = new manager();
+                developer d = new developer();
+                m.getDetails();
+                m.calculateSalary();
+                d.getDetails();
+                d.calculateSalary();
+        }
+}
+class manager extends employee{
+        String name = "Sanjai";
+        int age = 44;
+        int emp_id = 79993;
+public int calculateSalary(){
+        int salary = 10000;
+        int bonus = 1250;
+        int sal = bonus + salary;
+        return sal;
+}
+public void getDetails(){
+        System.out.println("name:"+name);
+        System.out.println("age:"+age);
+        System.out.println("emp_id:"+emp_id);
+}
+        }
+class developer extends employee{
+        String name = "Sathvik";
+        int age = 22;
+        int emp_id = 80993;
+public int calculateSalary(){
+        int salary = 15000;
+        int bonus = 1200;
+        int sal = bonus + salary;
+        return sal;
+}
+public void getDetails(){
+        System.out.println("name:"+name);
+        System.out.println("age:"+age);
+        System.out.println("emp_id:"+emp_id);
+}
+        }
+
+        
